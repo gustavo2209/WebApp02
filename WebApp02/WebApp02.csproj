@@ -78,6 +78,8 @@
   <ItemGroup>
     <Content Include="AutorInsDelUpd.aspx" />
     <Content Include="css\main.css" />
+    <Content Include="FrasesInsDelUpd.aspx" />
+    <Content Include="FrasesQry.aspx" />
     <Content Include="images\argentina.png" />
     <Content Include="images\brasil.png" />
     <Content Include="images\chile.png" />
@@ -102,6 +104,20 @@
       <DependentUpon>AutorInsDelUpd.aspx</DependentUpon>
     </Compile>
     <Compile Include="frases.cs" />
+    <Compile Include="FrasesInsDelUpd.aspx.cs">
+      <DependentUpon>FrasesInsDelUpd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrasesInsDelUpd.aspx.designer.cs">
+      <DependentUpon>FrasesInsDelUpd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrasesQry.aspx.cs">
+      <DependentUpon>FrasesQry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrasesQry.aspx.designer.cs">
+      <DependentUpon>FrasesQry.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Main.aspx.cs">
       <DependentUpon>Main.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

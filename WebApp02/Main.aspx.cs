@@ -43,7 +43,15 @@ namespace WebApp02
             GridViewRow row = GridView1.Rows[index];
             int idautor = Convert.ToInt32(row.Cells[0].Text); // esta en la columna 0
 
-            Response.Redirect("AutorInsDelUpd.aspx?Accion=" + accion + "&Idautor=" + idautor);
+            if (accion == "FRASE")
+            {
+                string nombre = row.Cells[1].Text;
+                Response.Redirect("FrasesQry.aspx?idautor=" + idautor + "&nombre=" + nombre);
+            }
+            else
+            {
+                Response.Redirect("AutorInsDelUpd.aspx?Accion=" + accion + "&Idautor=" + idautor);
+            }
         }
     }
 }
