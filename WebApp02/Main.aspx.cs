@@ -43,7 +43,7 @@ namespace WebApp02
             GridViewRow row = GridView1.Rows[index];
             int idautor = Convert.ToInt32(row.Cells[0].Text); // esta en la columna 0
 
-            Response.Redirect("AutorInsDelUpd.aspx?accion=" + accion + "&idautor=" + idautor);
+            Response.Redirect("AutorInsDelUpd.aspx?Accion=" + accion + "&Idautor=" + idautor);
         }
     }
 }
