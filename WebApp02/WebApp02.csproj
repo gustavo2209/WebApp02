@@ -51,6 +51,8 @@
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -74,12 +76,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\main.css" />
+    <Content Include="images\argentina.png" />
+    <Content Include="images\brasil.png" />
+    <Content Include="images\chile.png" />
+    <Content Include="images\ecuador.png" />
+    <Content Include="images\paisaje.jpg" />
+    <Content Include="images\peru.png" />
+    <Content Include="images\pi-favicon.gif" />
+    <Content Include="jq\bootstrap\bootstrap-icons.min.css" />
+    <Content Include="jq\bootstrap\bootstrap.bundle.min.js" />
+    <Content Include="jq\bootstrap\bootstrap.min.css" />
+    <Content Include="jq\jquery-3.6.0.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="autores.cs" />
+    <Compile Include="frases.cs" />
+    <Compile Include="ModelFrases.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="jq\bootstrap\fonts\bootstrap-icons.woff" />
+    <Content Include="jq\bootstrap\fonts\bootstrap-icons.woff2" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
