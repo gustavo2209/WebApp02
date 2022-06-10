@@ -76,6 +76,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AutorInsDelUpd.aspx" />
     <Content Include="css\main.css" />
     <Content Include="images\argentina.png" />
     <Content Include="images\brasil.png" />
@@ -88,11 +89,26 @@
     <Content Include="jq\bootstrap\bootstrap.bundle.min.js" />
     <Content Include="jq\bootstrap\bootstrap.min.css" />
     <Content Include="jq\jquery-3.6.0.min.js" />
+    <Content Include="Main.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="autores.cs" />
+    <Compile Include="AutorInsDelUpd.aspx.cs">
+      <DependentUpon>AutorInsDelUpd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutorInsDelUpd.aspx.designer.cs">
+      <DependentUpon>AutorInsDelUpd.aspx</DependentUpon>
+    </Compile>
     <Compile Include="frases.cs" />
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ModelFrases.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
